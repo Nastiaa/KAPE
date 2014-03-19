@@ -149,6 +149,10 @@ Button(frame,font=('helvetica', 10, 'underline italic'),bd=8,relief=RAISED,
 Button(frame,font=('helvetica', 10, 'underline italic'),bd=8,relief=RAISED,
        cursor='hand2',bg='dark green', fg='white', text='Next picture',
        command=lambda: ChangePicture(+1)).pack(side=LEFT)
+# Button fo closing the program
+Button(frame,font=('helvetica', 10, 'underline italic'),bd=8,relief=RAISED,
+       cursor='hand2',bg='dark green', fg='white', text='Quit',
+       command=root.destroy).pack(side=LEFT)
 # Initial сondition of the program 
 ChangePicture(0)
 root.mainloop()
